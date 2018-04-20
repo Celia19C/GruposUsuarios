@@ -1,0 +1,7 @@
+function startApp() {
+
+    'use strict'
+
+    
+
+}
