@@ -1,21 +1,21 @@
-'use strict'
+'use strict';
+
 
 //Recogemos el valor del input
 
-
-const usersList = [];
+let usersList = [];
 let user = {
     name: '',
     group: ''
 }
 
 function addUser () {
-    let userName = document.querySelector('.user__name').value;
-    user.name = userName.push(userList);
+    const userName = document.querySelector('.user__name').value;
+    user.name = userName;
+    usersList.push(user);
 }
 
-
-let addUserBtn = document.querySelector('.addUser__btn');
+const addUserBtn = document.querySelector('.addUser__btn');
 addUserBtn.addEventListener('click', addUser);
 
 
